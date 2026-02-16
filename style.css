@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5em 0 0 0;
+  padding: 3.5em 0 0 0;
 }
 
 .odinLogo {
@@ -44,7 +44,6 @@ body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  width: 100%;
 }
 
 .odinText {
@@ -75,5 +74,34 @@ body {
 .signup {
   width: 65%;
   height: 100%;
-  background: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupHeader {
+  display: flex;
+  align-items: flex-end;
+  height: 30%;
+  background-color: rgba(168, 170, 172, 0.5);
+}
+
+.signupForm {
+  flex: 1;
+  background-color: white;
+}
+
+.signupFooter {
+  height: 30%;
+  background-color: rgba(168, 170, 172, 0.5);
+}
+
+.signupHeader, .signupForm, .signupFooter {
+  padding-left: 40px;
+}
+
+.signupHeaderText {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
 }
