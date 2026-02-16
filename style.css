@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Norse";
+  src:
+    url(/assets/fonts/Norse-Bold.woff) format("woff"),
+    url(./assets/fonts/Norse-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --system-ui:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: var(--system-ui);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image {
+  background-image: url("./assets/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5em 0 0 0;
+}
+
+.odinLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 100%;
+}
+
+.odinText {
+  font-family: "Norse", sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.imageOdin {
+  width: 75px;
+  height: 100px;
+}
+
+.photoBy {
+  position: relative;
+  color: white;
+  bottom: 0;
+  text-align: center;
+}
+
+.photoBy a {
+  color: white;
+  text-decoration: underline;
+}
+
+.signup {
+  width: 65%;
+  height: 100%;
+  background: grey;
+}
