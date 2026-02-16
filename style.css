@@ -136,22 +136,62 @@ body {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="password"] {
+input[type="password"],
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid {
   width: 200px;
-  border: 1px solid #d6d6da;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
   padding: 4px;
 }
 
-input:hover {
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid {
+  border: 1px solid #c64646;
+}
+
+input:hover,
+input:hover:valid {
   border: 1px solid #7c98e8;
 }
 
-input:focus {
+input:hover:invalid,
+input:hover:invalid:required {
+  border: 1px solid #c64646;
+}
+
+input:focus,
+input:focus:valid {
   outline: 1px solid #7c98e8;
 }
 
-input:focus-visible {
+input:focus:invalid,
+input:focus:invalid:required {
+  border: 1px solid #c64646;
+}
+
+input:focus-visible,
+input:focus-visible:valid {
   outline: 1px solid #7c98e8;
   box-shadow: 4px 4px 4px #d3d4d5;
+}
+
+input:focus-visible:invalid {
+  outline: 1px solid #c64646;
+  box-shadow: 4px 4px 4px #d3d4d5;
+}
+
+#first_name {
+  text-transform: capitalize;
+}
+
+#last_name {
+  text-transform: uppercase;
+}
+
+#email {
+  text-transform: lowercase;
 }

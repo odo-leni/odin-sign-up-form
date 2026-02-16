@@ -45,46 +45,60 @@
             <h2>Let's to do this!</h2>
             <fieldset class="fieldset">
               <div class="divInput">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" name="first_name" />
+                <label for="first_name">FIRST NAME*</label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  required
+                  autofocus
+                />
               </div>
               <div class="divInput">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" name="last_name" />
+                <label for="last_name">LAST NAME*</label>
+                <input type="text" id="last_name" name="last_name" required />
               </div>
             </fieldset>
             <fieldset class="fieldset">
               <div class="divInput">
-                <label for="email">EMAIL</label>
+                <label for="email">EMAIL*</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   autocomplete="email"
+                  required
                 />
               </div>
               <div class="divInput">
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" id="phone_number" name="phone_number" />
+                <input
+                  type="tel"
+                  id="phone_number"
+                  name="phone_number"
+                  autocomplete="tel"
+                />
               </div>
             </fieldset>
             <fieldset class="fieldset">
               <div class="divInput">
-                <label for="password">PASSWORD</label>
+                <label for="password">PASSWORD*</label>
                 <input
                   type="password"
                   id="password"
                   name="password"
                   autocomplete="current-password"
+                  required
                 />
               </div>
               <div class="divInput">
-                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <label for="confirm_password">CONFIRM PASSWORD*</label>
                 <input
                   type="password"
                   id="confirm_password"
                   name="confirm_password"
                   autocomplete="new-password"
+                  required
                 />
               </div>
             </fieldset>
